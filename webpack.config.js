@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
-  entry: { main: './src/index.js' },
+  entry: { main: './client/index.js' },
   module: {
     rules: [
       {
@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './public/index.html',
+      template: './client/index.html',
       filename: './index.html'
     }),
     new MiniCssExtractPlugin({
